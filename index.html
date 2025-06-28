@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kaveesh Kadirvel Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="bg-black text-white font-sans">
+
+  <!-- Header -->
+  <header class="p-6 bg-black border-b border-gray-800 sticky top-0 z-10">
+    <div class="container mx-auto flex justify-between items-center">
+      <h1 class="text-2xl font-bold">Kaveesh Kadirvel</h1>
+      <nav class="space-x-6">
+        <a href="#home" class="hover:underline">Home</a>
+        <a href="#about" class="hover:underline">About</a>
+        <a href="#portfolio" class="hover:underline">Portfolio</a>
+        <a href="#contact" class="hover:underline">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Home -->
+  <section id="home" class="min-h-screen flex items-center justify-center text-center px-4 bg-black">
+    <div>
+      <h2 class="text-5xl md:text-7xl font-extrabold mb-6">Hi, I'm Kaveesh Kadirvel</h2>
+      <p class="text-xl md:text-2xl text-gray-300 mb-4">Video & Photo Editor | Content Creator</p>
+      <p class="text-md text-gray-500 max-w-xl mx-auto">I turn ideas into visual stories that connect, inspire, and engage.</p>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="py-16 px-4 bg-gray-900">
+    <div class="max-w-5xl mx-auto grid md:grid-cols-2 gap-8 items-center">
+      <div>
+        <h3 class="text-3xl font-bold mb-4">About Me</h3>
+        <p class="text-gray-300">
+          I'm a passionate video/photo editor and content creator with 7+ years of experience. I started editing when I was 12 and have developed a creative edge that blends aesthetics with storytelling.
+        </p>
+      </div>
+      <div class="text-center">
+        <img src="Kaveesh Professional Portrait.png" alt="Kaveesh Kadirvel" class="w-64 h-64 rounded-full mx-auto shadow-lg object-cover" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio -->
+  <section id="portfolio" class="py-16 px-4 bg-black">
+    <div class="max-w-5xl mx-auto">
+      <h3 class="text-3xl font-bold text-center mb-10">Portfolio</h3>
+      <div class="relative overflow-hidden">
+        <div id="slider" class="flex transition-transform duration-500 ease-in-out">
+          <div class="min-w-full px-4">
+            <img src="Instagram Reach Reels.jpg" class="w-full rounded-lg shadow" alt="Work 1">
+          </div>
+          <div class="min-w-full px-4">
+            <img src="Youtube Videos Reach.jpg" class="w-full rounded-lg shadow" alt="Work 2">
+          </div>
+          <div class="min-w-full px-4">
+            <img src="Posters & Cards.jpg" class="w-full rounded-lg shadow" alt="Work 3">
+          </div>
+          <div class="min-w-full px-4">
+            <img src="YT Thumbnails.jpg" class="w-full rounded-lg shadow" alt="Work 4">
+          </div>
+          <div class="min-w-full px-4">
+            <img src="tools & skills.jpg" class="w-full rounded-lg shadow" alt="Work 5">
+          </div>
+        </div>
+        <div class="absolute inset-0 flex items-center justify-between px-4">
+          <button onclick="moveSlide(-1)" class="bg-white text-black px-3 py-2 rounded-full">&#10094;</button>
+          <button onclick="moveSlide(1)" class="bg-white text-black px-3 py-2 rounded-full">&#10095;</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-16 px-4 bg-gray-900">
+    <div class="max-w-3xl mx-auto">
+      <h3 class="text-3xl font-bold mb-4 text-center">Contact Me</h3>
+      <p class="text-center mb-4 text-gray-400">Email: <a href="mailto:kaveesh@example.com" class="underline">kaveeshkadirvel@gmail.com</a></p>
+      <p class="text-center mb-8 text-gray-400">Instagram: <a href="https://instagram.com/kaveeeeeesh" class="underline">@kaveeeeeesh</a></p>
+
+      <form action="https://formspree.io/f/your-form-id" method="POST" class="space-y-4">
+        <input type="text" name="name" placeholder="Your Name" required class="w-full border border-gray-600 bg-black text-white p-3 rounded" />
+        <input type="email" name="email" placeholder="Your Email" required class="w-full border border-gray-600 bg-black text-white p-3 rounded" />
+        <textarea name="message" rows="4" placeholder="Your Message" required class="w-full border border-gray-600 bg-black text-white p-3 rounded"></textarea>
+        <button type="submit" class="w-full bg-white text-black py-2 px-4 rounded">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center py-4 text-sm text-gray-500 bg-black">
+    © 2025 Kaveesh Kadirvel. All rights reserved.
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
